@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(61, 61, 61, 0.719);
+}
+
+#head-text {
+    text-align: center;
+    font-family: 'Montserrat-Regular';
+    letter-spacing: 2px;
+    color: #8BC24A;
+    font-size: 3rem;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #333;
+}
+
+table tr:nth-child(odd) {
+    background-color: #EDEBEC;
+}
+
+table tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+table tr th, table tr td {
+    padding: 10px 25px;
+    border-right: 1px solid #EDEBEC;
+}
+
+table tr th h3 {
+    padding: 5px 0px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    border-bottom: 1px solid rgba(104, 103, 103, 0.384);
+}
+
+table tr th h2, table tr th h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+}
+
+table tr th h4 {
+    color: #818080;
+}
+
+table tr th .price {
+    display: flex;
+    align-items: center;
+}
+
+table tr th .price h1, table tr th .price p {
+    font-family: 'Montserrat-Bold';
+}
+
+tr {
+    align-items: center;
+}
+
+table tr th h5 {
+    font-family: 'Montserrat-Regular';
+}
+
+table tr th:nth-child(2), table .last td:nth-child(2) {
+    background-color: #18D1D4;
+}
+
+table tr th:nth-child(3), table .last td:nth-child(3) {
+    background-color: #8BC24A;
+}
+
+table tr th:nth-child(4), table .last td:nth-child(4) {
+    background-color: #FFC928;
+}
+
+table tr th:nth-child(5), table .last td:nth-child(5) {
+    background-color: #F54035;
+}
+
+table tr th, table .last td {
+    color: #fff;
+}
+
+table .last td {
+    padding: 15px 20px;
+}
+
+table tr th:nth-child(1) {
+    color: rgb(10, 10, 10);
+}
+
+table tr td {
+    text-transform: capitalize;
+    font-family: 'Montserrat-Regular';
+}
+
+.fa-check-circle {
+    color: #7ac404;
+    font-size: 22px;
+}
+
+.fa-times-circle {
+    color: rgb(216, 5, 5);
+    font-size: 22px;
+}
+
+table tr:nth-child(8) td {
+    position: relative;
+    z-index: 1;
+}
+
+table tr:nth-child(8) td:nth-child(2):after, table tr:nth-child(8) td:nth-child(3):after, table tr:nth-child(8) td:nth-child(4):after, table tr:nth-child(8) td:nth-child(5):after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    z-index: -1;
+    margin-left: 42%;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    margin-bottom: -5px;
+}
